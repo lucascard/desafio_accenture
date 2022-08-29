@@ -2,6 +2,13 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   e2e: {
-  "baseUrl": "http://sampleapp.tricentis.com/101/app.php"
+    
+    defaultCommandTimeout: 10000,
+    baseUrl: "http://sampleapp.tricentis.com/101/app.php"
+
   },
+  env:{
+    username: 'lucascard',
+    password: 'Teste123'
+  }
 });
